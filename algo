@@ -9,13 +9,13 @@ WHILE (c <> '.') DO
 
     length := length + 1
 
-    // count vowels
+    
     IF (c = 'a' OR c = 'e' OR c = 'i' OR c = 'o' OR c = 'u' OR
         c = 'A' OR c = 'E' OR c = 'I' OR c = 'O' OR c = 'U') THEN
         vowels := vowels + 1
     END_IF
 
-    // count words
+    
     IF (c <> ' ') THEN
         IF (inWord = FALSE) THEN
             words := words + 1

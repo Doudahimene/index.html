@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Store Landing Page</title>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+   
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+
+  <header id="home" class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="text-2xl font-bold text-slate-900">
+          ShopVista
+        </a>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+          <a href="#products" class="text-slate-600 hover:text-indigo-600 transition">Products</a>
+          <a href="#contact" class="text-slate-600 hover:text-indigo-600 transition">Contact</a>
+        </nav>
+
+      
+        <details class="md:hidden relative">
+          <summary class="cursor-pointer list-none rounded-lg border border-slate-300 px-4 py-2 text-slate-700">
+            Menu
+          </summary>
+          <div class="absolute right-0 mt-3 w-44 rounded-xl bg-white shadow-lg ring-1 ring-black/5 p-2">
+            <a href="#home" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Home</a>
+            <a href="#products" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Products</a>
+            <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Contact</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  
+<section   
+    
+  class="bg-gradient-to-r from-slate-900 to-indigo-700 text-white">
+    <div     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+        Discover Your Next Favorite Product
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-slate-200">
+        Explore stylish, high-quality items designed for modern living.
+      </p>
+      <a
+        href="#products"
+        class="inline-block mt-8 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 shadow-md hover:bg-slate-100 transition">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <main id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Featured Products</h2>
+      <p class="mt-3 text-slate-600">Handpicked items with a clean, modern look.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+     
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <img src="https://static2.offshoes.fr/modules/ps_imageslider/images/5e3f6acacaea489dc42c46543c3e517d238e2a49_NEW%20BALANCE%202026.png" alt="Classic Sneakers" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-slate-900">Classic Sneakers</h3>
+          <p class="mt-2 text-slate-600">
+            Comfortable everyday sneakers with a modern design.
+          </p>
+          <a href="#" class="mt-5 inline-flex justify-center rounded-full bg-slate-900 px-4 py-2 text-white hover:bg-indigo-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </article>
+
+      
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <img src="https://media.wired.com/photos/6500a13d9bfe3097d38ae97e/3:2/w_2560%2Cc_limit/Apple-Watch-S9-hero-Gear.jpg" alt="Smart Watch" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-slate-900">Smart Watch</h3>
+          <p class="mt-2 text-slate-600">
+            Track your day with a sleek smartwatch built for convenience.
+          </p>
+          <a href="#" class="mt-5 inline-flex justify-center rounded-full bg-slate-900 px-4 py-2 text-white hover:bg-indigo-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </article>
+
+      
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <img src="https://i.etsystatic.com/17410901/r/il/93704e/2566324067/il_570xN.2566324067_keew.jpg" alt="Leather Backpack" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-slate-900">Leather Backpack</h3>
+          <p class="mt-2 text-slate-600">
+            A durable and stylish backpack for work or travel.
+          </p>
+          <a href="#" class="mt-5 inline-flex justify-center rounded-full bg-slate-900 px-4 py-2 text-white hover:bg-indigo-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </article>
+
+      
+      <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+        <img src="https://www.01net.com/app/uploads/2021/03/Apple-AirPods-Max-1.jpg" alt="Wireless Headphones" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-slate-900">Airpods max</h3>
+          <p class="mt-2 text-slate-600">
+            Enjoy rich sound and all-day comfort with wireless audio.
+          </p>
+          <a href="#" class="mt-5 inline-flex justify-center rounded-full bg-slate-900 px-4 py-2 text-white hover:bg-indigo-600 transition">
+            Shop Now
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+ 
+  <footer id="contact" class="bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <p class="text-sm sm:text-base">&copy; 2026 ShopVista. All rights reserved.</p>
+      <p class="text-sm sm:text-base">Email magazin.shopvista@gamail.com</p>
+      <p class="text-sm sm:text-base"> phone number: 054367899</p>
+
+      <p class="mt-2 text-slate-300 text-sm">
+        for more infos ,see up for more contact details
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

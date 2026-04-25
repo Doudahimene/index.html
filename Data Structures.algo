@@ -1,0 +1,37 @@
+Algo sumdist
+var
+  set1:array[100]of integer
+  set2:array[100]of integer
+  D:array[100]of integer
+  n1,n2,k,i,j, c, sum : integer#
+
+begin
+   sum ← 0;
+   k ← 0;
+   Read (n1);
+   Read(n2);
+
+        for i from 0 to n1-1 do 
+             Read set1[i]
+        efor
+
+        for j from 0 to n2-1 do 
+            Read set2[i]
+        efor
+
+        for i from 0 to n1-1 do
+            if set1[i] not in set2 then 
+            D[k] ← set1[i]
+            k ← k+1
+        efor
+
+       for j from 0 to n2-1 do
+           if set2[i] not in set1 then 
+           D[k] ← set2[i]
+           k ← k+1 
+       efor
+    
+    for c from 0 to k-1 do 
+    sum ← sum + D[c]
+efor
+end

@@ -35,3 +35,66 @@ begin
     sum ← sum + D[c]
 efor
 end
+begin
+Procedure dot_product(v1, v2, n, ps)
+
+VAR
+    i : INTEGER
+
+Begin
+    ps ← 0
+
+    For i ← 0 to n-1 do
+        ps ← ps + v1[i] * v2[i]
+    EndFor
+
+End
+
+
+Algorithm OrthogonalVectors
+
+VAR
+    v1, v2 : ARRAY[100] OF REAL
+    n, p, i, j : INTEGER
+    ps : REAL
+
+Begin
+    Read n
+    Read p
+
+    For i ← 1 to p do
+
+        For j ← 0 to n-1 do
+            Read v1[j]
+        EndFor
+
+        For j ← 0 to n-1 do
+            Read v2[j]
+        EndFor
+
+        Call dot_product(v1, v2, n, ps)
+
+        If ps = 0 then
+            Write "Orthogonal"
+        Else
+            Write "Not Orthogonal"
+        EndIf
+
+    EndFor
+
+End
+
+Function dot_product(v1, v2, n) RETURNS REAL
+
+VAR
+    i, ps : INTEGER
+
+Begin
+    ps ← 0
+
+    For i ← 0 to n-1 do
+        ps ← ps + v1[i] * v2[i]
+    EndFor
+
+    Return ps
+End
